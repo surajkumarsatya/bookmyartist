@@ -1,9 +1,40 @@
-import { ArtistCard } from "@/components/artists/ArtistCard";
-import { getArtists } from "@/services/artist.service";
+"use client";
+
+import { useEffect, useState } from "react";
 import { ChevronDown, Search } from "lucide-react";
 
-export default async function Home() {
-  const artists = await getArtists();
+import { ArtistCard } from "@/components/artists/ArtistCard";
+import { getArtists } from "@/services/artist.service";
+import type { Artist } from "@/types/artist";
+
+export default function Home() {
+  const [artists, setArtists] = useState<Artist[]>([]);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchArtists() {
+      const data = await getArtists();
+      setArtists(data);
+      setLoading(false);
+    }
+
+    fetchArtists();
+  }, []);
+
+  const filteredArtists = artists.filter((artist) => {
+    const query = searchQuery.toLowerCase().trim();
+
+    if (!query) {
+      return true;
+    }
+
+    return (
+      artist.name.toLowerCase().includes(query) ||
+      artist.category.toLowerCase().includes(query) ||
+      artist.city.toLowerCase().includes(query)
+    );
+  });
 
   return (
     <main className="min-h-screen bg-[#08080D] text-white">
@@ -28,8 +59,9 @@ export default async function Home() {
               for weddings, parties, corporate events and more.
             </p>
 
+            {/* Search */}
             <div className="mx-auto mt-10 max-w-3xl">
-                            <div className="flex items-center border border-white/10 bg-white/6 px-5 py-3 shadow-2xl backdrop-blur-xl">
+              <div className="flex items-center border border-white/10 bg-white/6 px-5 py-3 shadow-2xl backdrop-blur-xl">
                 <Search
                   size={20}
                   strokeWidth={1.8}
@@ -38,12 +70,15 @@ export default async function Home() {
 
                 <input
                   type="text"
+                  value={searchQuery}
+                  onChange={(event) => setSearchQuery(event.target.value)}
                   placeholder="Search artists, categories or cities..."
                   className="w-full bg-transparent text-base text-white outline-none placeholder:text-zinc-500"
                 />
               </div>
             </div>
 
+            {/* Filters - functionality will be added later */}
             <div className="mt-5 flex flex-wrap justify-center gap-3">
               {["Category", "City", "Price", "Rating"].map((filter) => (
                 <button
@@ -52,6 +87,7 @@ export default async function Home() {
                   className="flex items-center gap-2 border border-white/10 bg-white/4 px-5 py-2 text-sm text-zinc-300 transition hover:border-white/20 hover:bg-white/8 hover:text-white"
                 >
                   {filter}
+
                   <ChevronDown
                     size={16}
                     strokeWidth={1.8}
@@ -77,15 +113,24 @@ export default async function Home() {
           </div>
 
           <p className="text-sm text-zinc-500">
-            {artists.length} artists available
+            {filteredArtists.length} artists available
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {artists.map((artist) => (
-            <ArtistCard key={artist.id} artist={artist} />
-          ))}
-        </div>
+        {/* Loading */}
+        {loading ? (
+          <div className="flex min-h-60 items-center justify-center">
+            <p className="font-mono text-sm text-zinc-500">
+              Loading artists...
+            </p>
+          </div>
+        ) : (
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {filteredArtists.map((artist) => (
+              <ArtistCard key={artist.id} artist={artist} />
+            ))}
+          </div>
+        )}
       </section>
     </main>
   );
