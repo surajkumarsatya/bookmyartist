@@ -16,14 +16,34 @@ const categories = [
   "Band",
 ];
 
+const priceRanges = [
+  "All",
+  "Under ₹50,000",
+  "₹50,000 - ₹1,00,000",
+  "₹1,00,000 - ₹2,00,000",
+  "Above ₹2,00,000",
+];
+
+const ratingOptions = [
+  "All",
+  "4.0+",
+  "4.5+",
+  "4.7+",
+];
+
 export default function Home() {
   const [artists, setArtists] = useState<Artist[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
+
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedCity, setSelectedCity] = useState("All");
+  const [selectedPrice, setSelectedPrice] = useState("All");
+  const [selectedRating, setSelectedRating] = useState("All");
 
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [isCityOpen, setIsCityOpen] = useState(false);
+  const [isPriceOpen, setIsPriceOpen] = useState(false);
+  const [isRatingOpen, setIsRatingOpen] = useState(false);
 
   const [loading, setLoading] = useState(true);
 
@@ -60,28 +80,64 @@ export default function Home() {
       selectedCity === "All" ||
       artist.city === selectedCity;
 
-    return matchesSearch && matchesCategory && matchesCity;
+    let matchesPrice = true;
+
+    if (selectedPrice === "Under ₹50,000") {
+      matchesPrice = artist.basePrice < 50000;
+    } else if (selectedPrice === "₹50,000 - ₹1,00,000") {
+      matchesPrice =
+        artist.basePrice >= 50000 &&
+        artist.basePrice <= 100000;
+    } else if (selectedPrice === "₹1,00,000 - ₹2,00,000") {
+      matchesPrice =
+        artist.basePrice > 100000 &&
+        artist.basePrice <= 200000;
+    } else if (selectedPrice === "Above ₹2,00,000") {
+      matchesPrice = artist.basePrice > 200000;
+    }
+
+    let matchesRating = true;
+
+    if (selectedRating === "4.0+") {
+      matchesRating = artist.rating >= 4.0;
+    } else if (selectedRating === "4.5+") {
+      matchesRating = artist.rating >= 4.5;
+    } else if (selectedRating === "4.7+") {
+      matchesRating = artist.rating >= 4.7;
+    }
+
+    return (
+      matchesSearch &&
+      matchesCategory &&
+      matchesCity &&
+      matchesPrice &&
+      matchesRating
+    );
   });
 
   return (
     <main className="min-h-screen bg-[#08080D] text-white">
       <section className="relative">
         <div className="pointer-events-none absolute left-1/2 top-0 h-125 w-200 -translate-x-1/2 bg-linear-to-r from-orange-500/10 via-pink-500/10 to-purple-500/10 blur-3xl" />
+
         <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-20 sm:px-6 lg:px-8 lg:pt-28">
           <div className="mx-auto max-w-4xl text-center">
             <p className="mb-5 font-mono text-sm font-medium uppercase tracking-[0.3em] text-orange-400">
               BookMyArtist
             </p>
+
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-7xl">
               Find the perfect
               <span className="block bg-linear-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">
                 artist for your event
               </span>
             </h1>
+
             <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg">
               Discover talented singers, DJs, dancers, comedians and bands
               for weddings, parties, corporate events and more.
             </p>
+
             <div className="mx-auto mt-10 max-w-3xl">
               <div className="flex items-center border border-white/10 bg-white/6 px-5 py-3 shadow-2xl backdrop-blur-xl">
                 <Search
@@ -107,6 +163,8 @@ export default function Home() {
                   onClick={() => {
                     setIsCategoryOpen((open) => !open);
                     setIsCityOpen(false);
+                    setIsPriceOpen(false);
+                    setIsRatingOpen(false);
                   }}
                   className="flex items-center gap-2 border border-white/10 bg-white/4 px-5 py-2 text-sm text-zinc-300 transition hover:border-white/20 hover:bg-white/8 hover:text-white"
                 >
@@ -152,6 +210,8 @@ export default function Home() {
                   onClick={() => {
                     setIsCityOpen((open) => !open);
                     setIsCategoryOpen(false);
+                    setIsPriceOpen(false);
+                    setIsRatingOpen(false);
                   }}
                   className="flex items-center gap-2 border border-white/10 bg-white/4 px-5 py-2 text-sm text-zinc-300 transition hover:border-white/20 hover:bg-white/8 hover:text-white"
                 >
@@ -189,31 +249,97 @@ export default function Home() {
                 )}
               </div>
 
-              <button
-                type="button"
-                className="flex items-center gap-2 border border-white/10 bg-white/4 px-5 py-2 text-sm text-zinc-300 transition hover:border-white/20 hover:bg-white/8 hover:text-white"
-              >
-                Price
+              <div className="relative">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsPriceOpen((open) => !open);
+                    setIsCategoryOpen(false);
+                    setIsCityOpen(false);
+                    setIsRatingOpen(false);
+                  }}
+                  className="flex items-center gap-2 border border-white/10 bg-white/4 px-5 py-2 text-sm text-zinc-300 transition hover:border-white/20 hover:bg-white/8 hover:text-white"
+                >
+                  {selectedPrice === "All" ? "Price" : selectedPrice}
 
-                <ChevronDown
-                  size={16}
-                  strokeWidth={1.8}
-                  className="text-zinc-500"
-                />
-              </button>
+                  <ChevronDown
+                    size={16}
+                    strokeWidth={1.8}
+                    className={`text-zinc-500 transition-transform ${
+                      isPriceOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
 
-              <button
-                type="button"
-                className="flex items-center gap-2 border border-white/10 bg-white/4 px-5 py-2 text-sm text-zinc-300 transition hover:border-white/20 hover:bg-white/8 hover:text-white"
-              >
-                Rating
+                {isPriceOpen && (
+                  <div className="absolute left-1/2 z-20 mt-2 w-56 -translate-x-1/2 overflow-hidden border border-white/10 bg-[#11131A] p-1 text-left shadow-2xl">
+                    {priceRanges.map((price) => (
+                      <button
+                        key={price}
+                        type="button"
+                        onClick={() => {
+                          setSelectedPrice(price);
+                          setIsPriceOpen(false);
+                        }}
+                        className={`w-full px-4 py-2.5 text-left text-sm transition ${
+                          selectedPrice === price
+                            ? "bg-white/10 text-white"
+                            : "text-zinc-400 hover:bg-white/5 hover:text-white"
+                        }`}
+                      >
+                        {price}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
 
-                <ChevronDown
-                  size={16}
-                  strokeWidth={1.8}
-                  className="text-zinc-500"
-                />
-              </button>
+              <div className="relative">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsRatingOpen((open) => !open);
+                    setIsCategoryOpen(false);
+                    setIsCityOpen(false);
+                    setIsPriceOpen(false);
+                  }}
+                  className="flex items-center gap-2 border border-white/10 bg-white/4 px-5 py-2 text-sm text-zinc-300 transition hover:border-white/20 hover:bg-white/8 hover:text-white"
+                >
+                  {selectedRating === "All"
+                    ? "Rating"
+                    : selectedRating}
+
+                  <ChevronDown
+                    size={16}
+                    strokeWidth={1.8}
+                    className={`text-zinc-500 transition-transform ${
+                      isRatingOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                {isRatingOpen && (
+                  <div className="absolute left-1/2 z-20 mt-2 w-40 -translate-x-1/2 overflow-hidden border border-white/10 bg-[#11131A] p-1 text-left shadow-2xl">
+                    {ratingOptions.map((rating) => (
+                      <button
+                        key={rating}
+                        type="button"
+                        onClick={() => {
+                          setSelectedRating(rating);
+                          setIsRatingOpen(false);
+                        }}
+                        className={`w-full px-4 py-2.5 text-left text-sm transition ${
+                          selectedRating === rating
+                            ? "bg-white/10 text-white"
+                            : "text-zinc-400 hover:bg-white/5 hover:text-white"
+                        }`}
+                      >
+                        {rating}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -249,8 +375,8 @@ export default function Home() {
             </h3>
 
             <p className="mt-2 max-w-md text-sm text-zinc-500">
-              Try changing your search or selecting a different category or
-              city.
+              Try changing your search or selecting a different category,
+              city, price range or rating.
             </p>
           </div>
         ) : (
