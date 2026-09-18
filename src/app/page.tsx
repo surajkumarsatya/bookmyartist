@@ -200,7 +200,6 @@ export default function Home() {
             </div>
 
             <div className="mt-5 flex flex-wrap justify-center gap-3">
-              {/* Category Filter */}
               <div className="relative">
                 <button
                   type="button"
@@ -250,7 +249,6 @@ export default function Home() {
                 )}
               </div>
 
-              {/* City Filter */}
               <div className="relative">
                 <button
                   type="button"
@@ -496,7 +494,7 @@ export default function Home() {
           </div>
         )}
 
-        {/* Pagination */}
+  
         {totalPages > 1 && (
           <div className="mt-12 flex items-center justify-center gap-2">
             <button
