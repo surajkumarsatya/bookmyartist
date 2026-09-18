@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
-
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -20,16 +19,18 @@ export const metadata: Metadata = {
   description: "Discover and book artists for your events.",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${spaceGrotesk.variable} ${plexMono.variable}`}
-    >
+    <html lang="en" className={`${spaceGrotesk.variable} ${plexMono.variable}`}>
       <body className="min-h-full font-sans">{children}</body>
     </html>
   );
