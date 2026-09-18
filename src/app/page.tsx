@@ -56,6 +56,9 @@ export default function Home() {
 
   const [loading, setLoading] = useState(true);
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const ARTISTS_PER_PAGE = 12;
+
   useEffect(() => {
     async function fetchArtists() {
       const data = await getArtists();
@@ -140,10 +143,22 @@ export default function Home() {
     return 0;
   });
 
+  const totalPages = Math.ceil(
+    sortedArtists.length / ARTISTS_PER_PAGE,
+  );
+
+  const startIndex =
+    (currentPage - 1) * ARTISTS_PER_PAGE;
+
+  const paginatedArtists = sortedArtists.slice(
+    startIndex,
+    startIndex + ARTISTS_PER_PAGE,
+  );
+
   return (
     <main className="min-h-screen bg-[#08080D] text-white">
       <section className="relative">
-        <div className="pointer-events-none absolute left-1/2 top-0 h-125 w-full md:w-200 -translate-x-1/2 bg-linear-to-r from-orange-500/10 via-pink-500/10 to-purple-500/10 blur-3xl" />
+        <div className="pointer-events-none absolute left-1/2 top-0 h-125 w-full -translate-x-1/2 bg-linear-to-r from-orange-500/10 via-pink-500/10 to-purple-500/10 blur-3xl md:w-200" />
 
         <div className="relative mx-auto w-full max-w-7xl px-4 pb-16 pt-20 sm:px-6 lg:px-8 lg:pt-28">
           <div className="mx-auto w-full max-w-4xl text-center">
@@ -175,13 +190,17 @@ export default function Home() {
                   type="text"
                   placeholder="Search artists, categories or cities..."
                   value={searchQuery}
-                  onChange={(event) => setSearchQuery(event.target.value)}
+                  onChange={(event) => {
+                    setSearchQuery(event.target.value);
+                    setCurrentPage(1);
+                  }}
                   className="w-full bg-transparent text-base text-white outline-none placeholder:text-zinc-500"
                 />
               </div>
             </div>
 
             <div className="mt-5 flex flex-wrap justify-center gap-3">
+              {/* Category Filter */}
               <div className="relative">
                 <button
                   type="button"
@@ -215,6 +234,7 @@ export default function Home() {
                         type="button"
                         onClick={() => {
                           setSelectedCategory(category);
+                          setCurrentPage(1);
                           setIsCategoryOpen(false);
                         }}
                         className={`w-full px-4 py-2.5 text-left text-sm transition ${
@@ -230,6 +250,7 @@ export default function Home() {
                 )}
               </div>
 
+              {/* City Filter */}
               <div className="relative">
                 <button
                   type="button"
@@ -261,6 +282,7 @@ export default function Home() {
                         type="button"
                         onClick={() => {
                           setSelectedCity(city);
+                          setCurrentPage(1);
                           setIsCityOpen(false);
                         }}
                         className={`w-full px-4 py-2.5 text-left text-sm transition ${
@@ -276,6 +298,7 @@ export default function Home() {
                 )}
               </div>
 
+              {/* Price Filter */}
               <div className="relative">
                 <button
                   type="button"
@@ -307,6 +330,7 @@ export default function Home() {
                         type="button"
                         onClick={() => {
                           setSelectedPrice(price);
+                          setCurrentPage(1);
                           setIsPriceOpen(false);
                         }}
                         className={`w-full px-4 py-2.5 text-left text-sm transition ${
@@ -322,6 +346,7 @@ export default function Home() {
                 )}
               </div>
 
+              {/* Rating Filter */}
               <div className="relative">
                 <button
                   type="button"
@@ -355,6 +380,7 @@ export default function Home() {
                         type="button"
                         onClick={() => {
                           setSelectedRating(rating);
+                          setCurrentPage(1);
                           setIsRatingOpen(false);
                         }}
                         className={`w-full px-4 py-2.5 text-left text-sm transition ${
@@ -387,6 +413,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-3 sm:items-end">
+            {/* Sort */}
             <div className="relative">
               <button
                 type="button"
@@ -419,6 +446,7 @@ export default function Home() {
                       type="button"
                       onClick={() => {
                         setSelectedSort(sort);
+                        setCurrentPage(1);
                         setIsSortOpen(false);
                       }}
                       className={`w-full px-4 py-2.5 text-left text-sm transition ${
@@ -459,9 +487,63 @@ export default function Home() {
           </div>
         ) : (
           <div className="grid w-full gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {sortedArtists.map((artist) => (
-              <ArtistCard key={artist.id} artist={artist} />
+            {paginatedArtists.map((artist) => (
+              <ArtistCard
+                key={artist.id}
+                artist={artist}
+              />
             ))}
+          </div>
+        )}
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="mt-12 flex items-center justify-center gap-2">
+            <button
+              type="button"
+              onClick={() =>
+                setCurrentPage((page) => Math.max(page - 1, 1))
+              }
+              disabled={currentPage === 1}
+              className="border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-zinc-400 transition hover:bg-white/10 hover:text-white disabled:cursor-not-allowed disabled:opacity-30"
+            >
+              Previous
+            </button>
+
+            {Array.from({ length: totalPages }, (_, index) => {
+              const page = index + 1;
+
+              return (
+                <button
+                  key={page}
+                  type="button"
+                  onClick={() => setCurrentPage(page)}
+                  aria-current={
+                    currentPage === page ? "page" : undefined
+                  }
+                  className={`flex size-10 items-center justify-center border text-sm transition ${
+                    currentPage === page
+                      ? "border-orange-400 bg-orange-500/10 text-orange-400"
+                      : "border-white/10 bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white"
+                  }`}
+                >
+                  {page}
+                </button>
+              );
+            })}
+
+            <button
+              type="button"
+              onClick={() =>
+                setCurrentPage((page) =>
+                  Math.min(page + 1, totalPages),
+                )
+              }
+              disabled={currentPage === totalPages}
+              className="border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-zinc-400 transition hover:bg-white/10 hover:text-white disabled:cursor-not-allowed disabled:opacity-30"
+            >
+              Next
+            </button>
           </div>
         )}
       </section>
