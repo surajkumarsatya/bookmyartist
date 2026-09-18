@@ -30,7 +30,6 @@ export function ArtistGallery({ artist }: ArtistGalleryProps) {
   return (
     <section className="border-t border-white/10">
       <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-        {/* Section heading */}
         <div className="mb-8">
           <p className="font-mono text-xs font-medium uppercase tracking-[0.25em] text-orange-400">
             Gallery
@@ -41,7 +40,6 @@ export function ArtistGallery({ artist }: ArtistGalleryProps) {
           </h2>
         </div>
 
-        {/* Main image */}
         <div className="relative overflow-hidden border border-white/10 bg-[#11131A]">
           <div className="relative aspect-video">
             <Image
@@ -52,7 +50,6 @@ export function ArtistGallery({ artist }: ArtistGalleryProps) {
               className="object-cover"
             />
 
-            {/* Previous */}
             {images.length > 1 && (
               <button
                 type="button"
@@ -64,7 +61,6 @@ export function ArtistGallery({ artist }: ArtistGalleryProps) {
               </button>
             )}
 
-            {/* Next */}
             {images.length > 1 && (
               <button
                 type="button"
@@ -76,14 +72,12 @@ export function ArtistGallery({ artist }: ArtistGalleryProps) {
               </button>
             )}
 
-            {/* Counter */}
             <div className="absolute bottom-4 right-4 border border-white/10 bg-black/50 px-3 py-1.5 font-mono text-xs text-white backdrop-blur-md">
               {activeIndex + 1} / {images.length}
             </div>
           </div>
         </div>
 
-        {/* Thumbnails */}
         {images.length > 1 && (
           <div className="mt-4 grid grid-cols-4 gap-3 sm:grid-cols-5 md:grid-cols-6">
             {images.map((image, index) => (
