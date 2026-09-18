@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "artist-001",
+    "name": "Aarav Mehta",
+    "category": "Singer",
+    "city": "Mumbai",
+    "basePrice": 45000,
+    "rating": 4.8,
+    "image": "https://i.pravatar.cc/800?img=1",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=1",
+      "https://i.pravatar.cc/800?img=14",
+      "https://i.pravatar.cc/800?img=26"
+    ],
+    "bio": "A versatile live vocalist known for engaging performances across weddings, corporate events, and private celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-001-review-1",
+        "author": "Neha",
+        "rating": 4.8,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-001-review-2",
+        "author": "Isha",
+        "rating": 4.8,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-11",
+        "2026-10-21",
+        "2026-11-06"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.5,
+        "Corporate": 1.25,
+        "College Fest": 1.0,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-002",
+    "name": "Riya Kapoor",
+    "category": "Singer",
+    "city": "Delhi",
+    "basePrice": 55000,
+    "rating": 4.9,
+    "image": "https://i.pravatar.cc/800?img=2",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=2",
+      "https://i.pravatar.cc/800?img=15",
+      "https://i.pravatar.cc/800?img=27"
+    ],
+    "bio": "A versatile live vocalist known for engaging performances across weddings, corporate events, and private celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-002-review-1",
+        "author": "Karan",
+        "rating": 4.9,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-002-review-2",
+        "author": "Nikhil",
+        "rating": 4.9,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-12",
+        "2026-10-22",
+        "2026-11-07"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.5,
+        "Corporate": 1.25,
+        "College Fest": 1.0,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-003",
+    "name": "Kabir Malhotra",
+    "category": "DJ",
+    "city": "Bengaluru",
+    "basePrice": 40000,
+    "rating": 4.7,
+    "image": "https://i.pravatar.cc/800?img=3",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=3",
+      "https://i.pravatar.cc/800?img=16",
+      "https://i.pravatar.cc/800?img=28"
+    ],
+    "bio": "A high-energy DJ who blends contemporary hits with crowd-favorite sets for modern events and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-003-review-1",
+        "author": "Priya",
+        "rating": 4.8,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-003-review-2",
+        "author": "Pooja",
+        "rating": 4.7,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-13",
+        "2026-10-23",
+        "2026-11-08"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.45,
+        "Corporate": 1.2,
+        "College Fest": 1.05,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-004",
+    "name": "Ananya Rao",
+    "category": "Dancer",
+    "city": "Hyderabad",
+    "basePrice": 30000,
+    "rating": 4.8,
+    "image": "https://i.pravatar.cc/800?img=4",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=4",
+      "https://i.pravatar.cc/800?img=17",
+      "https://i.pravatar.cc/800?img=29"
+    ],
+    "bio": "A trained performer delivering energetic choreography and stage shows tailored to the event audience.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-004-review-1",
+        "author": "Aditi",
+        "rating": 4.8,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-004-review-2",
+        "author": "Aman",
+        "rating": 4.8,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-14",
+        "2026-10-24",
+        "2026-11-09"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.4,
+        "Corporate": 1.2,
+        "College Fest": 1.0,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-005",
+    "name": "Vihaan Sharma",
+    "category": "Comedian",
+    "city": "Delhi",
+    "basePrice": 35000,
+    "rating": 4.6,
+    "image": "https://i.pravatar.cc/800?img=5",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=5",
+      "https://i.pravatar.cc/800?img=18",
+      "https://i.pravatar.cc/800?img=30"
+    ],
+    "bio": "A live comedy performer with an interactive style suited for corporate evenings, college events, and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-005-review-1",
+        "author": "Rohit",
+        "rating": 4.6,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-005-review-2",
+        "author": "Sneha",
+        "rating": 4.6,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-15",
+        "2026-10-25",
+        "2026-11-10"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.2,
+        "Corporate": 1.35,
+        "College Fest": 1.15,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-006",
+    "name": "Meera Iyer",
+    "category": "Singer",
+    "city": "Chennai",
+    "basePrice": 50000,
+    "rating": 4.9,
+    "image": "https://i.pravatar.cc/800?img=6",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=6",
+      "https://i.pravatar.cc/800?img=19",
+      "https://i.pravatar.cc/800?img=31"
+    ],
+    "bio": "A versatile live vocalist known for engaging performances across weddings, corporate events, and private celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-006-review-1",
+        "author": "Rahul",
+        "rating": 5,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-006-review-2",
+        "author": "Vikram",
+        "rating": 4.9,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-16",
+        "2026-10-26",
+        "2026-11-11"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.5,
+        "Corporate": 1.25,
+        "College Fest": 1.0,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-007",
+    "name": "Arjun Verma",
+    "category": "DJ",
+    "city": "Mumbai",
+    "basePrice": 60000,
+    "rating": 4.8,
+    "image": "https://i.pravatar.cc/800?img=7",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=7",
+      "https://i.pravatar.cc/800?img=20",
+      "https://i.pravatar.cc/800?img=32"
+    ],
+    "bio": "A high-energy DJ who blends contemporary hits with crowd-favorite sets for modern events and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-007-review-1",
+        "author": "Neha",
+        "rating": 4.8,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-007-review-2",
+        "author": "Isha",
+        "rating": 4.8,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-17",
+        "2026-10-20",
+        "2026-11-12"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.45,
+        "Corporate": 1.2,
+        "College Fest": 1.05,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-008",
+    "name": "Ishita Sen",
+    "category": "Dancer",
+    "city": "Kolkata",
+    "basePrice": 28000,
+    "rating": 4.7,
+    "image": "https://i.pravatar.cc/800?img=8",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=8",
+      "https://i.pravatar.cc/800?img=21",
+      "https://i.pravatar.cc/800?img=33"
+    ],
+    "bio": "A trained performer delivering energetic choreography and stage shows tailored to the event audience.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-008-review-1",
+        "author": "Karan",
+        "rating": 4.7,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-008-review-2",
+        "author": "Nikhil",
+        "rating": 4.7,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-10",
+        "2026-10-21",
+        "2026-11-13"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.4,
+        "Corporate": 1.2,
+        "College Fest": 1.0,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-009",
+    "name": "Rohan Bhatia",
+    "category": "Band",
+    "city": "Pune",
+    "basePrice": 75000,
+    "rating": 4.8,
+    "image": "https://i.pravatar.cc/800?img=9",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=9",
+      "https://i.pravatar.cc/800?img=22",
+      "https://i.pravatar.cc/800?img=34"
+    ],
+    "bio": "A live band offering a polished multi-artist performance with a mix of popular, classic, and event-friendly music.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-009-review-1",
+        "author": "Priya",
+        "rating": 4.9,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-009-review-2",
+        "author": "Pooja",
+        "rating": 4.8,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-11",
+        "2026-10-22",
+        "2026-11-14"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.55,
+        "Corporate": 1.3,
+        "College Fest": 1.1,
+        "Private Party": 1.2
+      }
+    }
+  },
+  {
+    "id": "artist-010",
+    "name": "Kiara Nair",
+    "category": "Singer",
+    "city": "Bengaluru",
+    "basePrice": 65000,
+    "rating": 4.9,
+    "image": "https://i.pravatar.cc/800?img=10",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=10",
+      "https://i.pravatar.cc/800?img=23",
+      "https://i.pravatar.cc/800?img=35"
+    ],
+    "bio": "A versatile live vocalist known for engaging performances across weddings, corporate events, and private celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-010-review-1",
+        "author": "Aditi",
+        "rating": 4.9,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-010-review-2",
+        "author": "Aman",
+        "rating": 4.9,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-12",
+        "2026-10-23",
+        "2026-11-05"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.5,
+        "Corporate": 1.25,
+        "College Fest": 1.0,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-011",
+    "name": "Dev Khanna",
+    "category": "Comedian",
+    "city": "Mumbai",
+    "basePrice": 42000,
+    "rating": 4.7,
+    "image": "https://i.pravatar.cc/800?img=11",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=11",
+      "https://i.pravatar.cc/800?img=24",
+      "https://i.pravatar.cc/800?img=36"
+    ],
+    "bio": "A live comedy performer with an interactive style suited for corporate evenings, college events, and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-011-review-1",
+        "author": "Rohit",
+        "rating": 4.7,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-011-review-2",
+        "author": "Sneha",
+        "rating": 4.7,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-13",
+        "2026-10-24",
+        "2026-11-06"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.2,
+        "Corporate": 1.35,
+        "College Fest": 1.15,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-012",
+    "name": "Tara Joshi",
+    "category": "DJ",
+    "city": "Delhi",
+    "basePrice": 48000,
+    "rating": 4.6,
+    "image": "https://i.pravatar.cc/800?img=12",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=12",
+      "https://i.pravatar.cc/800?img=25",
+      "https://i.pravatar.cc/800?img=37"
+    ],
+    "bio": "A high-energy DJ who blends contemporary hits with crowd-favorite sets for modern events and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-012-review-1",
+        "author": "Rahul",
+        "rating": 4.7,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-012-review-2",
+        "author": "Vikram",
+        "rating": 4.6,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-14",
+        "2026-10-25",
+        "2026-11-07"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.45,
+        "Corporate": 1.2,
+        "College Fest": 1.05,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-013",
+    "name": "Aditya Sinha",
+    "category": "Singer",
+    "city": "Lucknow",
+    "basePrice": 32000,
+    "rating": 4.5,
+    "image": "https://i.pravatar.cc/800?img=13",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=13",
+      "https://i.pravatar.cc/800?img=26",
+      "https://i.pravatar.cc/800?img=38"
+    ],
+    "bio": "A versatile live vocalist known for engaging performances across weddings, corporate events, and private celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-013-review-1",
+        "author": "Neha",
+        "rating": 4.5,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-013-review-2",
+        "author": "Isha",
+        "rating": 4.5,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-15",
+        "2026-10-26",
+        "2026-11-08"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.5,
+        "Corporate": 1.25,
+        "College Fest": 1.0,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-014",
+    "name": "Naina Chawla",
+    "category": "Dancer",
+    "city": "Jaipur",
+    "basePrice": 26000,
+    "rating": 4.8,
+    "image": "https://i.pravatar.cc/800?img=14",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=14",
+      "https://i.pravatar.cc/800?img=27",
+      "https://i.pravatar.cc/800?img=39"
+    ],
+    "bio": "A trained performer delivering energetic choreography and stage shows tailored to the event audience.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-014-review-1",
+        "author": "Karan",
+        "rating": 4.8,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-014-review-2",
+        "author": "Nikhil",
+        "rating": 4.8,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-16",
+        "2026-10-20",
+        "2026-11-09"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.4,
+        "Corporate": 1.2,
+        "College Fest": 1.0,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-015",
+    "name": "Yash Kapoor",
+    "category": "DJ",
+    "city": "Pune",
+    "basePrice": 38000,
+    "rating": 4.7,
+    "image": "https://i.pravatar.cc/800?img=15",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=15",
+      "https://i.pravatar.cc/800?img=28",
+      "https://i.pravatar.cc/800?img=40"
+    ],
+    "bio": "A high-energy DJ who blends contemporary hits with crowd-favorite sets for modern events and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-015-review-1",
+        "author": "Priya",
+        "rating": 4.8,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-015-review-2",
+        "author": "Pooja",
+        "rating": 4.7,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-17",
+        "2026-10-21",
+        "2026-11-10"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.45,
+        "Corporate": 1.2,
+        "College Fest": 1.05,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-016",
+    "name": "Sara Fernandes",
+    "category": "Singer",
+    "city": "Goa",
+    "basePrice": 70000,
+    "rating": 4.9,
+    "image": "https://i.pravatar.cc/800?img=16",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=16",
+      "https://i.pravatar.cc/800?img=29",
+      "https://i.pravatar.cc/800?img=41"
+    ],
+    "bio": "A versatile live vocalist known for engaging performances across weddings, corporate events, and private celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-016-review-1",
+        "author": "Aditi",
+        "rating": 4.9,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-016-review-2",
+        "author": "Aman",
+        "rating": 4.9,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-10",
+        "2026-10-22",
+        "2026-11-11"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.5,
+        "Corporate": 1.25,
+        "College Fest": 1.0,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-017",
+    "name": "Manav Arora",
+    "category": "Comedian",
+    "city": "Chandigarh",
+    "basePrice": 30000,
+    "rating": 4.6,
+    "image": "https://i.pravatar.cc/800?img=17",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=17",
+      "https://i.pravatar.cc/800?img=30",
+      "https://i.pravatar.cc/800?img=42"
+    ],
+    "bio": "A live comedy performer with an interactive style suited for corporate evenings, college events, and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-017-review-1",
+        "author": "Rohit",
+        "rating": 4.6,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-017-review-2",
+        "author": "Sneha",
+        "rating": 4.6,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-11",
+        "2026-10-23",
+        "2026-11-12"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.2,
+        "Corporate": 1.35,
+        "College Fest": 1.15,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-018",
+    "name": "Zoya Khan",
+    "category": "Dancer",
+    "city": "Delhi",
+    "basePrice": 35000,
+    "rating": 4.8,
+    "image": "https://i.pravatar.cc/800?img=18",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=18",
+      "https://i.pravatar.cc/800?img=31",
+      "https://i.pravatar.cc/800?img=43"
+    ],
+    "bio": "A trained performer delivering energetic choreography and stage shows tailored to the event audience.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-018-review-1",
+        "author": "Rahul",
+        "rating": 4.9,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-018-review-2",
+        "author": "Vikram",
+        "rating": 4.8,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-12",
+        "2026-10-24",
+        "2026-11-13"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.4,
+        "Corporate": 1.2,
+        "College Fest": 1.0,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-019",
+    "name": "Kunal Desai",
+    "category": "Band",
+    "city": "Ahmedabad",
+    "basePrice": 68000,
+    "rating": 4.7,
+    "image": "https://i.pravatar.cc/800?img=19",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=19",
+      "https://i.pravatar.cc/800?img=32",
+      "https://i.pravatar.cc/800?img=44"
+    ],
+    "bio": "A live band offering a polished multi-artist performance with a mix of popular, classic, and event-friendly music.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-019-review-1",
+        "author": "Neha",
+        "rating": 4.7,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-019-review-2",
+        "author": "Isha",
+        "rating": 4.7,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-13",
+        "2026-10-25",
+        "2026-11-14"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.55,
+        "Corporate": 1.3,
+        "College Fest": 1.1,
+        "Private Party": 1.2
+      }
+    }
+  },
+  {
+    "id": "artist-020",
+    "name": "Aanya Roy",
+    "category": "Singer",
+    "city": "Kolkata",
+    "basePrice": 42000,
+    "rating": 4.8,
+    "image": "https://i.pravatar.cc/800?img=20",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=20",
+      "https://i.pravatar.cc/800?img=33",
+      "https://i.pravatar.cc/800?img=45"
+    ],
+    "bio": "A versatile live vocalist known for engaging performances across weddings, corporate events, and private celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-020-review-1",
+        "author": "Karan",
+        "rating": 4.8,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-020-review-2",
+        "author": "Nikhil",
+        "rating": 4.8,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-14",
+        "2026-10-26",
+        "2026-11-05"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.5,
+        "Corporate": 1.25,
+        "College Fest": 1.0,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-021",
+    "name": "Reyansh Gupta",
+    "category": "DJ",
+    "city": "Noida",
+    "basePrice": 45000,
+    "rating": 4.6,
+    "image": "https://i.pravatar.cc/800?img=21",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=21",
+      "https://i.pravatar.cc/800?img=34",
+      "https://i.pravatar.cc/800?img=46"
+    ],
+    "bio": "A high-energy DJ who blends contemporary hits with crowd-favorite sets for modern events and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-021-review-1",
+        "author": "Priya",
+        "rating": 4.7,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-021-review-2",
+        "author": "Pooja",
+        "rating": 4.6,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-15",
+        "2026-10-20",
+        "2026-11-06"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.45,
+        "Corporate": 1.2,
+        "College Fest": 1.05,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-022",
+    "name": "Ira Menon",
+    "category": "Singer",
+    "city": "Bengaluru",
+    "basePrice": 58000,
+    "rating": 4.9,
+    "image": "https://i.pravatar.cc/800?img=22",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=22",
+      "https://i.pravatar.cc/800?img=35",
+      "https://i.pravatar.cc/800?img=47"
+    ],
+    "bio": "A versatile live vocalist known for engaging performances across weddings, corporate events, and private celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-022-review-1",
+        "author": "Aditi",
+        "rating": 4.9,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-022-review-2",
+        "author": "Aman",
+        "rating": 4.9,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-16",
+        "2026-10-21",
+        "2026-11-07"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.5,
+        "Corporate": 1.25,
+        "College Fest": 1.0,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-023",
+    "name": "Dhruv Singhania",
+    "category": "Comedian",
+    "city": "Gurugram",
+    "basePrice": 50000,
+    "rating": 4.7,
+    "image": "https://i.pravatar.cc/800?img=23",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=23",
+      "https://i.pravatar.cc/800?img=36",
+      "https://i.pravatar.cc/800?img=48"
+    ],
+    "bio": "A live comedy performer with an interactive style suited for corporate evenings, college events, and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-023-review-1",
+        "author": "Rohit",
+        "rating": 4.7,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-023-review-2",
+        "author": "Sneha",
+        "rating": 4.7,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-17",
+        "2026-10-22",
+        "2026-11-08"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.2,
+        "Corporate": 1.35,
+        "College Fest": 1.15,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-024",
+    "name": "Myra Saxena",
+    "category": "Dancer",
+    "city": "Mumbai",
+    "basePrice": 32000,
+    "rating": 4.8,
+    "image": "https://i.pravatar.cc/800?img=24",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=24",
+      "https://i.pravatar.cc/800?img=37",
+      "https://i.pravatar.cc/800?img=49"
+    ],
+    "bio": "A trained performer delivering energetic choreography and stage shows tailored to the event audience.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-024-review-1",
+        "author": "Rahul",
+        "rating": 4.9,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-024-review-2",
+        "author": "Vikram",
+        "rating": 4.8,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-10",
+        "2026-10-23",
+        "2026-11-09"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.4,
+        "Corporate": 1.2,
+        "College Fest": 1.0,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-025",
+    "name": "Veer Oberoi",
+    "category": "DJ",
+    "city": "Hyderabad",
+    "basePrice": 52000,
+    "rating": 4.7,
+    "image": "https://i.pravatar.cc/800?img=25",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=25",
+      "https://i.pravatar.cc/800?img=38",
+      "https://i.pravatar.cc/800?img=50"
+    ],
+    "bio": "A high-energy DJ who blends contemporary hits with crowd-favorite sets for modern events and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-025-review-1",
+        "author": "Neha",
+        "rating": 4.7,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-025-review-2",
+        "author": "Isha",
+        "rating": 4.7,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-11",
+        "2026-10-24",
+        "2026-11-10"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.45,
+        "Corporate": 1.2,
+        "College Fest": 1.05,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-026",
+    "name": "Saanvi Patel",
+    "category": "Singer",
+    "city": "Ahmedabad",
+    "basePrice": 36000,
+    "rating": 4.6,
+    "image": "https://i.pravatar.cc/800?img=26",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=26",
+      "https://i.pravatar.cc/800?img=39",
+      "https://i.pravatar.cc/800?img=51"
+    ],
+    "bio": "A versatile live vocalist known for engaging performances across weddings, corporate events, and private celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-026-review-1",
+        "author": "Karan",
+        "rating": 4.6,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-026-review-2",
+        "author": "Nikhil",
+        "rating": 4.6,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-12",
+        "2026-10-25",
+        "2026-11-11"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.5,
+        "Corporate": 1.25,
+        "College Fest": 1.0,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-027",
+    "name": "Ritvik Das",
+    "category": "Band",
+    "city": "Kolkata",
+    "basePrice": 80000,
+    "rating": 4.9,
+    "image": "https://i.pravatar.cc/800?img=27",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=27",
+      "https://i.pravatar.cc/800?img=40",
+      "https://i.pravatar.cc/800?img=52"
+    ],
+    "bio": "A live band offering a polished multi-artist performance with a mix of popular, classic, and event-friendly music.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-027-review-1",
+        "author": "Priya",
+        "rating": 5,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-027-review-2",
+        "author": "Pooja",
+        "rating": 4.9,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-13",
+        "2026-10-26",
+        "2026-11-12"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.55,
+        "Corporate": 1.3,
+        "College Fest": 1.1,
+        "Private Party": 1.2
+      }
+    }
+  },
+  {
+    "id": "artist-028",
+    "name": "Avni Kapoor",
+    "category": "Dancer",
+    "city": "Lucknow",
+    "basePrice": 25000,
+    "rating": 4.5,
+    "image": "https://i.pravatar.cc/800?img=28",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=28",
+      "https://i.pravatar.cc/800?img=41",
+      "https://i.pravatar.cc/800?img=53"
+    ],
+    "bio": "A trained performer delivering energetic choreography and stage shows tailored to the event audience.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-028-review-1",
+        "author": "Aditi",
+        "rating": 4.5,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-028-review-2",
+        "author": "Aman",
+        "rating": 4.5,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-14",
+        "2026-10-20",
+        "2026-11-13"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.4,
+        "Corporate": 1.2,
+        "College Fest": 1.0,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-029",
+    "name": "Aman Bedi",
+    "category": "Comedian",
+    "city": "Pune",
+    "basePrice": 38000,
+    "rating": 4.7,
+    "image": "https://i.pravatar.cc/800?img=29",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=29",
+      "https://i.pravatar.cc/800?img=42",
+      "https://i.pravatar.cc/800?img=54"
+    ],
+    "bio": "A live comedy performer with an interactive style suited for corporate evenings, college events, and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-029-review-1",
+        "author": "Rohit",
+        "rating": 4.7,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-029-review-2",
+        "author": "Sneha",
+        "rating": 4.7,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-15",
+        "2026-10-21",
+        "2026-11-14"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.2,
+        "Corporate": 1.35,
+        "College Fest": 1.15,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-030",
+    "name": "Mahi Kulkarni",
+    "category": "Singer",
+    "city": "Pune",
+    "basePrice": 47000,
+    "rating": 4.8,
+    "image": "https://i.pravatar.cc/800?img=30",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=30",
+      "https://i.pravatar.cc/800?img=43",
+      "https://i.pravatar.cc/800?img=55"
+    ],
+    "bio": "A versatile live vocalist known for engaging performances across weddings, corporate events, and private celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-030-review-1",
+        "author": "Rahul",
+        "rating": 4.9,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-030-review-2",
+        "author": "Vikram",
+        "rating": 4.8,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-16",
+        "2026-10-22",
+        "2026-11-05"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.5,
+        "Corporate": 1.25,
+        "College Fest": 1.0,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-031",
+    "name": "Vivaan Reddy",
+    "category": "DJ",
+    "city": "Chennai",
+    "basePrice": 43000,
+    "rating": 4.6,
+    "image": "https://i.pravatar.cc/800?img=31",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=31",
+      "https://i.pravatar.cc/800?img=44",
+      "https://i.pravatar.cc/800?img=56"
+    ],
+    "bio": "A high-energy DJ who blends contemporary hits with crowd-favorite sets for modern events and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-031-review-1",
+        "author": "Neha",
+        "rating": 4.6,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-031-review-2",
+        "author": "Isha",
+        "rating": 4.6,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-17",
+        "2026-10-23",
+        "2026-11-06"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.45,
+        "Corporate": 1.2,
+        "College Fest": 1.05,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-032",
+    "name": "Diya Bansal",
+    "category": "Dancer",
+    "city": "Jaipur",
+    "basePrice": 29000,
+    "rating": 4.7,
+    "image": "https://i.pravatar.cc/800?img=32",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=32",
+      "https://i.pravatar.cc/800?img=45",
+      "https://i.pravatar.cc/800?img=57"
+    ],
+    "bio": "A trained performer delivering energetic choreography and stage shows tailored to the event audience.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-032-review-1",
+        "author": "Karan",
+        "rating": 4.7,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-032-review-2",
+        "author": "Nikhil",
+        "rating": 4.7,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-10",
+        "2026-10-24",
+        "2026-11-07"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.4,
+        "Corporate": 1.2,
+        "College Fest": 1.0,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-033",
+    "name": "Neil D'Souza",
+    "category": "Singer",
+    "city": "Goa",
+    "basePrice": 62000,
+    "rating": 4.9,
+    "image": "https://i.pravatar.cc/800?img=33",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=33",
+      "https://i.pravatar.cc/800?img=46",
+      "https://i.pravatar.cc/800?img=58"
+    ],
+    "bio": "A versatile live vocalist known for engaging performances across weddings, corporate events, and private celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-033-review-1",
+        "author": "Priya",
+        "rating": 5,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-033-review-2",
+        "author": "Pooja",
+        "rating": 4.9,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-11",
+        "2026-10-25",
+        "2026-11-08"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.5,
+        "Corporate": 1.25,
+        "College Fest": 1.0,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-034",
+    "name": "Kavya Mishra",
+    "category": "Comedian",
+    "city": "Varanasi",
+    "basePrice": 33000,
+    "rating": 4.6,
+    "image": "https://i.pravatar.cc/800?img=34",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=34",
+      "https://i.pravatar.cc/800?img=47",
+      "https://i.pravatar.cc/800?img=59"
+    ],
+    "bio": "A live comedy performer with an interactive style suited for corporate evenings, college events, and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-034-review-1",
+        "author": "Aditi",
+        "rating": 4.6,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-034-review-2",
+        "author": "Aman",
+        "rating": 4.6,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-12",
+        "2026-10-26",
+        "2026-11-09"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.2,
+        "Corporate": 1.35,
+        "College Fest": 1.15,
+        "Private Party": 1.1
+      }
+    }
+  },
+  {
+    "id": "artist-035",
+    "name": "Atharv Jain",
+    "category": "DJ",
+    "city": "Gurugram",
+    "basePrice": 55000,
+    "rating": 4.8,
+    "image": "https://i.pravatar.cc/800?img=35",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=35",
+      "https://i.pravatar.cc/800?img=48",
+      "https://i.pravatar.cc/800?img=60"
+    ],
+    "bio": "A high-energy DJ who blends contemporary hits with crowd-favorite sets for modern events and celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-035-review-1",
+        "author": "Rohit",
+        "rating": 4.8,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-035-review-2",
+        "author": "Sneha",
+        "rating": 4.8,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-13",
+        "2026-10-20",
+        "2026-11-10"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.45,
+        "Corporate": 1.2,
+        "College Fest": 1.05,
+        "Private Party": 1.15
+      }
+    }
+  },
+  {
+    "id": "artist-036",
+    "name": "Simran Kaur",
+    "category": "Singer",
+    "city": "Chandigarh",
+    "basePrice": 40000,
+    "rating": 4.7,
+    "image": "https://i.pravatar.cc/800?img=36",
+    "gallery": [
+      "https://i.pravatar.cc/800?img=36",
+      "https://i.pravatar.cc/800?img=49",
+      "https://i.pravatar.cc/800?img=61"
+    ],
+    "bio": "A versatile live vocalist known for engaging performances across weddings, corporate events, and private celebrations.",
+    "videos": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/ysz5S6PUM-U"
+    ],
+    "reviews": [
+      {
+        "id": "artist-036-review-1",
+        "author": "Rahul",
+        "rating": 4.8,
+        "comment": "Professional, energetic, and easy to coordinate with."
+      },
+      {
+        "id": "artist-036-review-2",
+        "author": "Vikram",
+        "rating": 4.7,
+        "comment": "Great performance and a memorable experience for our guests."
+      }
+    ],
+    "availability": {
+      "bookedDates": [
+        "2026-10-14",
+        "2026-10-21",
+        "2026-11-11"
+      ]
+    },
+    "pricing": {
+      "weekdayMultiplier": 1.0,
+      "weekendMultiplier": 1.2,
+      "eventTypeMultipliers": {
+        "Wedding": 1.5,
+        "Corporate": 1.25,
+        "College Fest": 1.0,
+        "Private Party": 1.15
+      }
+    }
+  }
+]
