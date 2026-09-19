@@ -10,7 +10,7 @@ The project is built from scratch with Next.js, TypeScript, Tailwind CSS, and Zu
 
 - GitHub: [github.com/surajkumarsatya/bookmyartist](https://github.com/surajkumarsatya/bookmyartist)
 - Live Deployment: [https://bookmyartist.vercel.app/](https://bookmyartist.vercel.app/)
-- Demo Video: *Add Loom/YouTube/Google Drive link here*
+- Demo Video: [https://www.loom.com/share/e9a14e8467914497af7bbb054fc77d45](https://www.loom.com/share/e9a14e8467914497af7bbb054fc77d45)
 
 ## Features
 
